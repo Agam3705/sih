@@ -1,0 +1,6 @@
+flask
+PyPDF2
+google-generativeai
+gunicorn
+Flask
+flask-cors

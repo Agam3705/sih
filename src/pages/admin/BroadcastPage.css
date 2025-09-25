@@ -1,0 +1,272 @@
+/* Tiptap Editor Styles */
+.tiptap-container {
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+.tiptap-container:focus-within {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.tiptap-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding: 8px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ced4da;
+}
+.tiptap-toolbar button {
+    background: none;
+    border: none;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #495057;
+}
+.tiptap-toolbar button:hover {
+    background-color: #e9ecef;
+}
+.tiptap-toolbar button.is-active {
+    background-color: #0d6efd;
+    color: white;
+}
+.tiptap-editor {
+    min-height: 250px;
+    padding: 15px;
+    outline: none;
+}
+.tiptap-editor > p {
+    margin: 0;
+}
+
+/* General Broadcast Page Styles */
+.broadcast-page {
+    padding: 30px;
+}
+.broadcast-page-title {
+    font-size: 2.2rem;
+    color: #0d6efd;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.broadcast-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.form-group {
+    margin-bottom: 25px;
+}
+.form-group label {
+    display: block;
+    font-size: 1.1rem;
+    color: #343a40;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.form-group select,
+.date-picker-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #495057;
+    background-color: #fff;
+}
+
+/* --- Media Attachments Section --- */
+.media-attachments-section {
+    margin-top: 25px;
+    border-top: 1px solid #eee;
+    padding-top: 25px;
+}
+.attachment-label {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #343a40;
+    margin-bottom: 15px;
+}
+.attachment-buttons {
+    margin-top: 15px;
+}
+.attachment-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.attachment-button:hover {
+    background-color: #dee2e6;
+}
+
+/* --- NEW: Attachment Preview Grid --- */
+.attachment-preview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+.attachment-preview-card {
+    position: relative;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 8px;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+.attachment-preview-card img,
+.attachment-preview-card video,
+.attachment-preview-card audio {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+.attachment-preview-card audio {
+    object-fit: contain; /* Better for audio player */
+}
+.attachment-preview-card span {
+    font-size: 0.8rem;
+    color: #495057;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.remove-attachment-btn {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FIX: Scheduling Layout */
+.scheduling-group {
+    display: flex;
+    align-items: left;
+    gap: 15px;
+    border-top: 1px solid #eee;
+    padding-top: 25px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+.scheduling-label {
+    flex-shrink: 0;
+}
+.date-picker-wrapper {
+    flex-grow: 1;
+    min-width: 350px;
+}
+.clear-schedule-button {
+    background-color: #5b6269;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.send-broadcast-button,
+.cancel-edit-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.send-broadcast-button {
+    background-color: #0d6efd;
+    color: white;
+}
+.cancel-edit-btn {
+    margin-top: 10px;
+    background-color: #f1f3f5;
+    color: #5a6482;
+    font-size: 1rem;
+}
+
+/* NEW: Scheduled Posts Section */
+.scheduled-posts-section {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #e9ecef;
+}
+.scheduled-posts-section h2 {
+    font-size: 1.8rem;
+    color: #212529;
+    margin-bottom: 20px;
+}
+.scheduled-posts-list {
+    display: grid;
+    gap: 20px;
+}
+.scheduled-post-card {
+    background-color: #fff;
+    border: 1px solid #eef0f4;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.scheduled-post-details {
+    flex-grow: 1;
+}
+.scheduled-post-details p {
+    margin: 0 0 8px 0;
+}
+.scheduled-post-content {
+    margin-top: 10px;
+    font-style: italic;
+    color: #6c757d;
+}
+.scheduled-post-actions {
+    display: flex;
+    gap: 10px;
+}
+.edit-btn, .delete-btn {
+    background: none;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    padding: 8px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 500;
+}
+.edit-btn {
+    color: #0d6efd;
+}
+.delete-btn {
+    color: #dc3545;
+}
