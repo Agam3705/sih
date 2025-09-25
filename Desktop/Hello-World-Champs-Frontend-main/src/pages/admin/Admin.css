@@ -1,0 +1,78 @@
+.admin-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(80,100,140,0.08);
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+.admin-card h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #2046c7;
+}
+
+.admin-card p {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #232945;
+}
+
+.mentor-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.mentor-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.mentor-info {
+    font-size: 1rem;
+}
+
+.mentor-actions button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.approve-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.approve-btn:hover {
+    background-color: #006403;
+    color: white;
+}
+
+.reject-btn {
+    background-color: #f94040;
+    color: white;
+}
+
+.reject-btn:hover {
+    background-color: #c30d00;
+    color: white;
+}
+
+.pending-btn {
+    background-color: #78909c;
+    color: white;
+}
+
+.pending-btn:hover {
+    background-color: #3a4f59;
+    color: white;
+}

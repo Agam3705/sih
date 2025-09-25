@@ -1,0 +1,150 @@
+/* Universal Admin Page Styles */
+.admin-page-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.admin-page-title {
+    font-size: 2.2rem;
+    color: var(--text-primary);
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.admin-card {
+    background-color: var(--bg-card);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-primary);
+    margin-bottom: 25px;
+    border: 1px solid var(--border-primary);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.admin-card h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: var(--text-primary);
+}
+
+.admin-card-subtitle {
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+/* --- NEW: Styles for Profile Info Display --- */
+.profile-info-display {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info-item {
+    background-color: var(--bg-main);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--border-primary);
+}
+
+.info-label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+}
+
+.info-value {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+/* --- End of New Styles --- */
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-primary);
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    box-sizing: border-box;
+    background-color: var(--bg-input);
+    color: var(--text-primary);
+    transition: border-color 0.2s, background-color 0.3s, color 0.3s;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    border-color: var(--text-link);
+    outline: 0;
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--text-link) 25%, transparent);
+}
+
+
+.admin-button {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.admin-button:hover {
+    opacity: 0.85;
+}
+
+.admin-button.primary {
+    background-color: var(--text-link);
+    color: var(--text-light);
+}
+.admin-button.secondary {
+    background-color: var(--bg-hover);
+    color: var(--text-primary);
+    border: 1px solid var(--border-primary);
+}
+
+.theme-toggle-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification-toggles {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.toggle-switch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-main);
+    padding: 15px;
+    border-radius: 8px;
+}
+.toggle-switch label {
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.toggle-switch input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--text-link);
+}

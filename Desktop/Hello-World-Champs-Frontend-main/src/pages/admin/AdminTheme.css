@@ -1,0 +1,49 @@
+/* --- Light Theme (Default) --- */
+:root {
+  /* Backgrounds */
+  --bg-main: #f8f9fa;      /* Main page background */
+  --bg-sidebar: #ffffff;   /* Sidebar */
+  --bg-card: #ffffff;      /* Cards, modals, form containers */
+  --bg-hover: #f1f3f5;     /* Hover state for links, buttons */
+  --bg-active: #e9ecef;    /* Active state for sidebar links */
+  --bg-input: #ffffff;     /* Input fields */
+  --bg-disabled: #e9ecef;
+
+  /* Text */
+  --text-primary: #212529;   /* Main text, headings */
+  --text-secondary: #6c757d;  /* Subtitles, helper text */
+  --text-link: #0d6efd;      /* Primary action color */
+  --text-light: #ffffff;     /* Text on dark buttons */
+  --text-error: #721c24;
+  --bg-error: #f8d7da;
+  --border-error: #f5c6cb;
+
+  /* Borders & Shadows */
+  --border-primary: #dee2e6;
+  --shadow-primary: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* --- Dark Theme --- */
+[data-theme='dark'] {
+  /* Backgrounds */
+  --bg-main: #121212;
+  --bg-sidebar: #1e1e1e;
+  --bg-card: #282828;
+  --bg-hover: #3a3a3a;
+  --bg-active: #454545;
+  --bg-input: #333333;
+  --bg-disabled: #3a3a3a;
+
+  /* Text */
+  --text-primary: #e0e0e0;
+  --text-secondary: #a0a0a0;
+  --text-link: #58a6ff;
+  --text-light: #ffffff;
+  --text-error: #f5c2c7;
+  --bg-error: #58151c;
+  --border-error: #8d3d44;
+
+  /* Borders & Shadows */
+  --border-primary: #444444;
+  --shadow-primary: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
